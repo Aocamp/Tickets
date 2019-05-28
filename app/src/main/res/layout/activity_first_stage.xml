@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FirstStageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutDirection"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical">
+        <TableRow
+            android:id="@+id/table_row_direction"
+            android:layout_width = "match_parent"
+            android:layout_height = "65dp"
+            android:orientation = "horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Выберите направление"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="0dp"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btn_choose_direction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="35dp"
+            android:text="Далее"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSchedule"
+        android:layout_below="@id/linearLayoutDirection"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical">
+        <TableRow
+            android:id="@+id/table_row_schedule"
+            android:layout_width = "match_parent"
+            android:layout_height = "35dp"
+            android:orientation = "horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Выберите дату"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-10dp"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btn_choose_schedule"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="65dp"
+            android:text="Далее"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCarriage"
+        android:layout_below="@id/linearLayoutSchedule"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <TableRow
+            android:id="@+id/table_row_carriage"
+            android:layout_width = "match_parent"
+            android:layout_height = "35dp"
+            android:orientation = "horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Выберите тип вагона"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/spinner_carriage"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:dropDownWidth="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-10dp"/>
+        </TableRow>
+
+        <Button
+            android:id="@+id/btn_choose_carriage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="85dp"
+            android:text="Далее"
+            android:background="@color/colorPrimary"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

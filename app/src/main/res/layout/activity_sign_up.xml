@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ktjwhite"
+    tools:context=".activity.SignUpActivity">
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="240dp"
+        android:ems="10"
+        android:hint="@string/name"
+        app:met_floatingLabel="highlight"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:layout_alignParentLeft="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_name"
+        android:hint="@string/email"
+        app:met_floatingLabel="highlight"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:layout_alignParentLeft="true" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register_email"
+        android:hint="@string/password"
+        app:met_floatingLabel="highlight"
+        app:met_minCharacters="5"
+        app:met_maxCharacters="16"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="15dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:id="@+id/btn_createAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:text="@string/sign_up"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp" />
+</RelativeLayout>

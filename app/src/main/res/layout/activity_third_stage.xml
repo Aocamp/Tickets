@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThirdStageActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Стомость билета"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textViewDirection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Направление"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textViewSeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Место"
+            android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textViewTrain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Поезд"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Чтобы произвести оплату выберить карту"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <Spinner
+            android:id="@+id/spinner_card"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="30dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginTop="10dp"
+        android:background="?android:attr/listDivider"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/divider2"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/cardNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="-0.25dp"
+            android:background="@drawable/bg_card_number_edit_text"
+            android:drawableRight="@drawable/ic_card_number"
+            android:hint="Номер карты"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="@android:color/black"
+            android:textSize="14sp"
+            tools:ignore="LabelFor,NegativeMargin" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-0.25dp"
+            android:orientation="horizontal"
+            tools:ignore="NegativeMargin">
+
+            <EditText
+                android:id="@+id/cardDateEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="-0.25dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_date_edit_text"
+                android:drawableRight="@drawable/ic_card_date"
+                android:hint="ММ/ГГ"
+                android:inputType="date"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,RtlHardcoded" />
+
+            <EditText
+                android:id="@+id/cardCVCEditText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="-0.25dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_card_cvc_edit_text"
+                android:drawableRight="@drawable/ic_card_cvc"
+                android:hint="CVC"
+                android:inputType="number"
+                android:padding="16dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                tools:ignore="LabelFor,RtlHardcoded" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Оплатить"/>
+
+</RelativeLayout>

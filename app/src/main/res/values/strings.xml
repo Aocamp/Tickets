@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Tickets</string>
+    <string name="app_text">Продажа ж/д билетов КТЖ</string>
+    <string name="email">Почта</string>
+    <string name="sign_in">Войти</string>
+    <string name="sign_up">Создать аккаунт</string>
+    <string name="password">Пароль</string>
+    <string name="buy">Купить билет</string>
+    <string name="signout">Выход</string>
+    <string name="orders">Мои заказы</string>
+    <string name="name">Имя</string>
+    <string name="ktj_text">Приложение для покупки билетов онлайн.
+        Компания осуществляет железнодорожные перевозки.</string>
+    <string name="ktj_text2">Для покупки билетов нажмите на кнопку купить билет.</string>
+    <string name="ktj_text3">Для подробной информации о покупке билетов перейдите в раздел помощь
+        (Главное меню - помощь).</string>
+</resources>

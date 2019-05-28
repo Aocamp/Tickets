@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/bar_layout"/>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/toolbar">
+        <ImageView
+            android:id="@+id/img_seat"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/seat"
+            android:layout_marginStart="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- доступно"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="25dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/seat_selected"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- занято"
+            android:layout_marginLeft="180dp"
+            android:layout_marginTop="25dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/seat_selected_by_user"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="- выбрано"
+            android:layout_marginLeft="290dp"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:id="@+id/seat_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="text"
+            android:layout_marginLeft="20dp"/>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/relativeLayout"
+        android:background="?android:attr/listDivider"/>
+
+    <View
+        android:id="@+id/fline"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="30dp"
+        android:background="?android:attr/listDivider"
+        android:rotation="-25"/>
+
+    <View
+        android:id="@+id/up_fline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:background="?android:attr/listDivider"/>
+
+    <View
+        android:id="@+id/train_up_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/list_items"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="40dp"
+        android:background="?android:attr/listDivider"/>
+
+    <View
+        android:id="@+id/train_down_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/train_up_line"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="40dp"
+        android:background="?android:attr/listDivider"/>
+
+    <View
+        android:id="@+id/sline"
+        android:layout_width="40dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="330dp"
+        android:background="?android:attr/listDivider"
+        android:rotation="25"/>
+
+    <View
+        android:id="@+id/up_sline"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/divider"
+        android:layout_marginTop="340dp"
+        android:layout_marginLeft="40dp"
+        android:background="?android:attr/listDivider"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_items"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/up_fline"
+        android:layout_marginLeft="50dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_items2"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/train_down_line"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_next"
+        android:text="Передвигайте схему для выбора мест"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true"
+        android:text="Далее"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "40231167134",
+    "firebase_url": "https://tickets-seller-ac8b0.firebaseio.com",
+    "project_id": "tickets-seller-ac8b0",
+    "storage_bucket": "tickets-seller-ac8b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40231167134:android:73eb7e78d07373fc",
+        "android_client_info": {
+          "package_name": "com.andrey.tickets"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "40231167134-0c5vkdcofi0pr079eiaev3hlp1mk81hm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andrey.tickets",
+            "certificate_hash": "80024ff887fd710c2a0b8ad88c1ab89eca22444a"
+          }
+        },
+        {
+          "client_id": "40231167134-82d5oue5i6l8h148jodtf9p0q5vslv6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmcsfPOslxVC4L-RmPniqptgxND49Bxjc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "40231167134-82d5oue5i6l8h148jodtf9p0q5vslv6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
